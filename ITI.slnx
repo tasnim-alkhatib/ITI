@@ -1,3 +1,6 @@
 <Solution>
-  <Project Path="Lab 1/Lab 1.csproj" />
+  <Folder Name="/C#/">
+    <Project Path="Lab 1/Lab 1.csproj" />
+    <Project Path="Lab 2/Lab 2.csproj" Id="5c232b63-59f8-4417-a38c-b68f00724520" />
+  </Folder>
 </Solution>
