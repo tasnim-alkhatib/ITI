@@ -4,4 +4,9 @@
     <Project Path="Lab 2/Lab 2.csproj" Id="5c232b63-59f8-4417-a38c-b68f00724520" />
     <Project Path="Lab 3/Lab 3.csproj" Id="f25630a1-ab34-4416-b07c-eed1f09a79f9" />
   </Folder>
+  <Folder Name="/C#/Lab 4/">
+    <Project Path="Lab 4-1/Lab 4-1.csproj" Id="7cebdfd4-fdf5-4255-8465-2c4de866c2ae" />
+    <Project Path="Lab 4-2/Lab 4-2.csproj" Id="05e4cb9b-586a-4493-a57a-c7f97ef1d084" />
+    <Project Path="Lab 4-3/Lab 4-3.csproj" Id="caecbf02-ad61-4336-a60d-9be365e696fa" />
+  </Folder>
 </Solution>
