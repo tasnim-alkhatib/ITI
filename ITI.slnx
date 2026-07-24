@@ -9,4 +9,13 @@
     <Project Path="Lab 4-2/Lab 4-2.csproj" Id="05e4cb9b-586a-4493-a57a-c7f97ef1d084" />
     <Project Path="Lab 4-3/Lab 4-3.csproj" Id="caecbf02-ad61-4336-a60d-9be365e696fa" />
   </Folder>
+  <Folder Name="/C#/Lab 5/">
+    <Project Path="Lab 5-1/Lab 5-1.csproj" Id="ebb59961-2408-4705-86c5-a1c9d740a225" />
+    <Project Path="Lab 5-2/Lab 5-2.csproj" Id="52ec0873-c899-4b0f-b051-cf175c478d0e" />
+    <Project Path="Lab 5-3/Lab 5-3.csproj" Id="04ffa036-96fe-41c9-bfd7-016448badc6d" />
+  </Folder>
+  <Folder Name="/C#/Lab 6/">
+    <Project Path="Lab 6-1/Lab 6-1.csproj" Id="5edef9d3-9c71-4fa7-a1d0-fb0bb5e8a7ca" />
+    <Project Path="Lab 6-2/Lab 6-2.csproj" Id="a15d1768-255f-4cad-ae7b-06af9f48de95" />
+  </Folder>
 </Solution>
