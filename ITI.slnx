@@ -18,4 +18,9 @@
     <Project Path="Lab 6-1/Lab 6-1.csproj" Id="5edef9d3-9c71-4fa7-a1d0-fb0bb5e8a7ca" />
     <Project Path="Lab 6-2/Lab 6-2.csproj" Id="a15d1768-255f-4cad-ae7b-06af9f48de95" />
   </Folder>
+  <Folder Name="/C#/Lab 7/">
+    <Project Path="Lab 7-1/Lab 7-1.csproj" Id="de8eda2d-83c6-45bc-8b21-8b54d5151fde" />
+    <Project Path="Lab 7-2/Lab 7-2.csproj" Id="ae002570-084a-4338-9491-496fe1c39fae" />
+    <Project Path="Lab 7-3/Lab 7-3.csproj" Id="522aa23b-2865-44fd-addb-3c8eb230caf7" />
+  </Folder>
 </Solution>
