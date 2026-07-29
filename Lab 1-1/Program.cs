@@ -37,7 +37,7 @@ namespace AviationTicketPricingEngine
             {
                 decimal finalPrice = calculator(ticket);
                 Console.WriteLine(
-                    $"Passenger: {ticket.PassengerName,-10} | Original: {ticket.BasePrice,8:C} | Final: {finalPrice,8:C}");
+                    $"Passenger: {ticket.PassengerName} | Original: {ticket.BasePrice} | Final: {finalPrice}");
             }
         }
 
@@ -47,7 +47,6 @@ namespace AviationTicketPricingEngine
         {
             Console.WriteLine($"[Email] Dear {ticket.PassengerName}, your ticket (ID {ticket.TicketId}) has been processed.");
         }
-
         static void SendSMS(FlightTicket ticket)
         {
             Console.WriteLine($"[SMS] Hi {ticket.PassengerName}, ticket #{ticket.TicketId} update available.");
@@ -64,37 +63,31 @@ namespace AviationTicketPricingEngine
                 new FlightTicket { TicketId = 5, PassengerName = "Karim",  BasePrice = 300m,  FlightTime = new DateTime(2026, 8, 5, 11, 0, 0),  IsDelayed = false },
             };
 
-            Console.WriteLine("=== Part 2: Named Methods ===");
 
             Console.WriteLine("-- Delayed Flight Discount (static method) --");
             ProcessTickets(tickets, DiscountRules.DelayedFlightDiscount);
 
-            Console.WriteLine("-- VIP Passenger Discount (instance method) --");
+            Console.WriteLine("\n-- VIP Passenger Discount (instance method) --");
             DiscountRules rules = new DiscountRules();
             ProcessTickets(tickets, rules.VipPassengerDiscount);
 
-            Console.WriteLine("\n=== Part 3: Anonymous Method - Holiday Special (10% off) ===");
+            Console.WriteLine("\n-- Holiday Special (10% off) --");
             ProcessTickets(tickets, delegate (FlightTicket t)
             {
                 return t.BasePrice * 0.90m;
             });
 
-            Console.WriteLine("\n=== Part 4: Lambda Expressions ===");
-
-            Console.WriteLine("-- Morning Flight Discount (5% before noon) --");
+            Console.WriteLine("\n-- Morning Flight Discount (5% before noon) --");
             ProcessTickets(tickets, t => t.FlightTime.Hour < 12 ? t.BasePrice * 0.95m : t.BasePrice);
 
-            Console.WriteLine("-- Premium Ticket Discount ($50 off if price > $1000) --");
+            Console.WriteLine("\n-- Premium Ticket Discount ($50 off if price > $1000) --");
             ProcessTickets(tickets, t => t.BasePrice > 1000m ? t.BasePrice - 50m : t.BasePrice);
 
-            Console.WriteLine("\n=== Part 5: Bonus - Multicast Delegate Notifications ===");
+            Console.WriteLine("\n-- Multicast Delegate Notifications --");
             NotificationSender notifier = SendEmail;
             notifier += SendSMS;
 
-            notifier(tickets[0]);
-
-            Console.WriteLine("\nDone. Press any key to exit.");
-            Console.ReadKey();
+            notifier.Invoke(tickets[0]);
         }
     }
 }

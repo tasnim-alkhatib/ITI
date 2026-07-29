@@ -25,7 +25,7 @@
   </Folder>
   <Folder Name="/EF/" />
   <Folder Name="/EF/Lab 1/">
-    <Project Path="Lab1-1/Lab1-1.csproj" Id="e7c0fed1-6151-4cac-a719-15b98a2d7792" />
-    <Project Path="Lab1-2/Lab1-2.csproj" Id="c11edb71-f097-4da8-9705-65db22407d77" />
+    <Project Path="Lab 1-1/Lab 1-1.csproj" Id="fada4699-4e0a-43c1-b0a4-e62cb6c78d2c" />
+    <Project Path="Lab 1-2/Lab 1-2.csproj" Id="acd23f41-5a7a-4bde-9c67-b2356f6f11ba" />
   </Folder>
 </Solution>
